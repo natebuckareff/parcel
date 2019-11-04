@@ -16,6 +16,7 @@ export {default as prettyDiagnostic} from './prettyDiagnostic';
 export {default as PromiseQueue} from './PromiseQueue';
 // $FlowFixMe this is untyped
 export {default as promisify} from './promisify';
+export {default as replaceBundleReferences} from './replaceBundleReferences';
 export {default as syncPromise} from './syncPromise';
 export {default as TapStream} from './TapStream';
 export {default as urlJoin} from './urlJoin';
