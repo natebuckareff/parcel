@@ -27,7 +27,7 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = process.env.HMR_HOSTNAME || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
   var ws = new WebSocket(
-    protocol + '://' + hostname + ':' + process.env.HMR_PORT + '/'
+    protocol + '://' + hostname + ':' + process.env.HMR_PORT + '/__hmr/'
   );
   ws.onmessage = function(event) {
     checkedAssets = {};
